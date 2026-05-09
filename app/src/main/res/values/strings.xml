@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">P2PVideoCall</string>
+    <string name="accessibility_service_description">Used for remote screen control during P2P video calls.</string>
+</resources>

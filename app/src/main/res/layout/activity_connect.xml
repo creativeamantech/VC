@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P2P Video Call"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnStartCall"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Start Call (Show QR)"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnJoinCall"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Join Call (Scan QR)"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/tvDiscoveryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Looking for peers on local network..."
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"/>
+
+    <!-- Placeholder for QR Image -->
+    <ImageView
+        android:id="@+id/ivQrCode"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:visibility="gone"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:padding="8dp"/>
+
+    <!-- Scanner view will be added dynamically or using an intent via ZXing -->
+
+</LinearLayout>
