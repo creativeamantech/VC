@@ -226,6 +226,7 @@ class CallActivity : AppCompatActivity() {
         scanQrLauncher.launch(ScanOptions().apply {
             setDesiredBarcodeFormats(ScanOptions.QR_CODE)
             setPrompt("Scan Peer Answer QR Code")
+            setOrientationLocked(true)
         })
     }
 
